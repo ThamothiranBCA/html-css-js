@@ -1,0 +1,33 @@
+article
+{
+    background-color: blue;
+    color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 64%;
+    margin-left: 150px;
+  }
+  th,td
+  {
+  border: 1px;
+  padding: 13px;
+  border-color: white;
+  color: white;
+  border: 2px solid rgb(67, 119, 216);
+  }
+.table-top
+{
+background-color: #46bbf5;
+}
+.logo
+{
+  width: 25px;
+  height:18px;
+  border-radius: 50px;
+}
+article
+{
+  height: 690px;
+}
