@@ -1,0 +1,55 @@
+body{
+    background-color: white;
+}
+input[type=submit]
+{
+    width:23%;
+   background-color:#033c44;
+   color: white;
+   padding:14px 20px ;
+   border:none;
+   border-radius: 6px;
+   cursor: pointer;
+}
+input[type=submit]:hover
+{
+background-color:#0aa1e7
+}
+aside
+{
+ width: 32%;
+ background-color: #0aa1e7;
+ margin: auto;
+ padding: 81px;
+}
+nav{
+    width: 100%;
+    background-color: #0aa1e7;
+    height: 30px;
+    margin-top: 20px;
+}
+input[type=text]
+{
+    padding: 10px;
+    border-radius: 20px;
+}
+input[type=email]
+{
+padding: 10px;
+border-radius: 20px;
+}
+input[type=password]
+{
+padding:10px;
+border-radius: 20px;
+}
+input[type=tel]
+{
+ padding: 10px;
+ border-radius: 20px;
+}
+
+
+
+
+  
