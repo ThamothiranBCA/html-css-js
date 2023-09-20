@@ -15,7 +15,7 @@ function checkNumber(number) {
  
   
   // Example usage:
-  checkNumber(-4);    // Output: "The number is positive"
+  checkNumber(4);    // Output: "The number is positive"
   checkNumber(-2);   // Output: "The number is negative"
   checkNumber(0);    // Output: "The number is zero"
   // document.getElementById("demo").innerHTML = result;
