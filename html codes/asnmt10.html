@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function printMultiplicationTable(number) {
+  if (number <= 0) {
+    console.log("Please provide a positive integer.");
+    return;
+  }
+
+  console.log(`Multiplication table for ${number}:`);
+  for (let i = 1; i <= 10; i++) {
+    const result = number * i;
+    console.log(`${number} x ${i} = ${result}`);
+  }
+  
+}
+
+// Example usage:
+const inputNumber = 5; // Change this to your desired positive integer.
+printMultiplicationTable(inputNumber);
+document.getElementById("demo").innerHTML = inputNumber ;
+    </script>
+</body>
+</html>

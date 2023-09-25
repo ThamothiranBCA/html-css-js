@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacciSeries(n) {
+  const series = [];
+
+  // Recursive function to calculate Fibonacci numbers
+  function fibonacci(n) {
+    if (n <= 0) {
+      return 0;
+    } else if (n === 1) {
+      return 1;
+    } else {
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+  }
+
+  for (let i = 0; fibonacci(i) <= n; i++) {
+    series.push(fibonacci(i));
+  }
+
+  return series;
+}
+
+// Example usage:
+const maxNumber = 50; // Change this to your desired maximum number.
+const fibonacciSeriesResult = fibonacciSeries(maxNumber);
+console.log(`Fibonacci series up to ${maxNumber}: ${fibonacciSeriesResult.join(', ')}`);
+
+    </script>
+</body>
+</html>
