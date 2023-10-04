@@ -1,3 +1,4 @@
+var nothing = "thamu"
 function isPrime(num) {
     if (num <= 1) {
       return false; // 0 and 1 are not prime numbers
@@ -39,4 +40,11 @@ function isPrime(num) {
   // Example usage:
   const n = 50; // Change this to your desired positive integer.
   printPrimesUpToN(n);
-  document.getElementById("twocalling").innerHTML = seen
+  // seen = "const n = 50 ";
+  // document.getElementById("calling").innerHTML = seen ;
+
+
+
+  
+//seen = "Vowelcount = " + result ;
+//document.getElementById("three").innerHTML = seen;

@@ -1,4 +1,4 @@
-var dear="show";
+var nothing = 'show';
 
 function calculateFactorial(number) {
     if (number < 0) {
@@ -18,5 +18,6 @@ function calculateFactorial(number) {
   const inputNumber = 5;
   const result = calculateFactorial(inputNumber);
   console.log(`The factorial of ${inputNumber} is ${result}`);
-  //sandy = "The factorial of ${inputNumber} is ${result}" ;
-  //document.getElementById("thamu").innerHTML= sandy ;
+  sandy = "The factorial of "  + (inputNumber)+ " is " + result;
+  document.getElementById("thamu").innerHTML= sandy;
+//ok

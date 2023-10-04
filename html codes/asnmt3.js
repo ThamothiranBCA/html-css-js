@@ -1,3 +1,5 @@
+var nothing='show';
+
 function countVowels(str) {
   // Convert the string to lowercase to handle both uppercase and lowercase vowels
   str = str.toLowerCase();
@@ -19,6 +21,9 @@ function countVowels(str) {
 }
 
 // Example usage:
-const inputString = "Hello, World!";
+const inputString = "Hello World!";
 const result = countVowels(inputString);
 console.log("Number of vowels:", result);
+
+seen = "Vowelcount = " + result ;
+document.getElementById("three").innerHTML = seen;
