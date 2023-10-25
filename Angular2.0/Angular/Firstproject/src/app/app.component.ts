@@ -8,4 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Firstproject';
 }
-window.alert("Welcome ");
+// window.alert("Welcome ");

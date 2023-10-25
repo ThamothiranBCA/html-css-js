@@ -13,16 +13,17 @@
  <nav>
     
     <ul>
-        <li><a href="./signin.html">
+        <li><a href="signin">
             SIGN IN </a>
         </li>
+       
     <li><a href="https://instagram.com/mr.thamu?igshid=NTc4MTIwNjQ2YQ==">CONTACT US</a></li>
     <li>
-        <a href="./match.html">MATCH</a></li>
+        <a href="match">MATCH</a></li>
     <li>
-        <a href="./news.html">NEWS</a></li>
+        <a href="news">NEWS</a></li>
     <li >
-        <a href="./football.html">HOME</a></li>
+        <a class="home" href="home">HOME</a></li>
  </ul>  
     <a href="https://www.the-aiff.com/">
     <img src="https://wallpapercave.com/wp/wp9846395.jpg" width="200px" height="100px"></a>
@@ -33,69 +34,222 @@
                  INDIAN FOOTBALL TEAM
        </div>
     </aside>
-        <article>
-            <h1>SAFF CHAMPIONSHIP 2023</h1>
-            <p>OFFICIAL SCHEDULE</p>
-            <table>
-                <tr class="table-top">
-                    <th>GROUP A</th>
-                    <th>GROUP B</th>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/indian flag.png"></td>
-                    <td>INDIA</td>
-                    <td><img class="logo" src="./../../assets/image/LEBANON flag.png"></td>
-                    <td>LEBANON</td>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/kuwait flag.png"></td>
-                    <td>KUWAIT</td>
-                    <td><img class="logo" src="./../../assets/image/MALDIVES flag.png"></td>
-                    <td>MALDIVES</td>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/NEPAL flag.png"></td>
-                    <td>NEPAL</td>
-                    <td><img class="logo" src="./../../assets/image/BHUTAN flag.png"></td>
-                    <td>BHUTAN</td>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/PAKISTAN flag.webp"></td>
-                   <td>PAKISTAN</td>
-                   <td><img class="logo" src="./../../assets/image/BANGALADESH flag.png"></td>
-                   <td>BANGALADESH</td> 
-                </tr>
+    <article>
+        <div class="tables">
+            <ul>
+             <li> <button (click)="activate()">FootBall Schedule</button></li>
+            <li><button (click)="deactivate()">Cricket Schedule</button></li>
+             <!-- <li><button>Athelatic Schedule</button></li> -->
+            </ul>
+        </div>
+    <div *ngIf="isActive; else inactiveUserTemplate">
+       
+            <div> 
+                <div  class="football">
+                    <h1>Football Teams</h1>
+                    <p>OFFICIAL SCHEDULE</p>
+                    <table>
+                        <tr class="table-top">
+                            <th>GROUP A</th>
+                            <th>GROUP B</th>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/indian flag.png"></td>
+                            <td>INDIA</td>
+                            <td><img class="logo" src="./../../assets/image/LEBANON flag.png"></td>
+                            <td>LEBANON</td>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/kuwait flag.png"></td>
+                            <td>KUWAIT</td>
+                            <td><img class="logo" src="./../../assets/image/MALDIVES flag.png"></td>
+                            <td>MALDIVES</td>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/NEPAL flag.png"></td>
+                            <td>NEPAL</td>
+                            <td><img class="logo" src="./../../assets/image/BHUTAN flag.png"></td>
+                            <td>BHUTAN</td>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/PAKISTAN flag.webp"></td>
+                        <td>PAKISTAN</td>
+                        <td><img class="logo" src="./../../assets/image/BANGALADESH flag.png"></td>
+                        <td>BANGALADESH</td> 
+                        </tr>
+    
+                        <tr class="table-top">
+                            <th>GROUP C</th>
+                            <th>GROUP D</th>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/Flag_of_New_Zealand.png"></td>
+                            <td>NEW ZEALAND</td>
+                            <td><img class="logo" src="./../../assets/image/Flag-Canada.webp"></td>
+                            <td>CANADA</td>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/AUSTRALIA.png"></td>
+                            <td>AUSTRALIA</td>
+                            <td><img class="logo" src="./../../assets/image/NETHERLANDS.png"></td>
+                            <td>NETHERLANDS</td>
+                        </tr>
+                        <tr>
+                        <td><img class="logo" src="./../../assets/image/USA.jpg"></td>
+                            <td>USA</td>
+                            <td><img class="logo" src="./../../assets/image/BRAZIL.jpg"></td>
+                            <td>BRAZIL</td>
+                        </tr>
+                        <tr>
+                            <td><img class="logo" src="./../../assets/image/SWEDEN.png"></td>
+                        <td>SWEDEN</td>
+                        <td><img class="logo" src="./../../assets/image/JAPAN flag.png"></td>
+                        <td>JAPAN</td> 
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div> 
+    <ng-template #inactiveUserTemplate>
+        <div class="cricket">
+            <article>
+                <h1>Cricket Teams</h1>
+                <p>OFFICIAL SCHEDULE</p>
+                <table>
+                    <tr class="table-top">
+                        <th>GROUP A</th>
+                        <th>GROUP B</th>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/indian flag.png"></td>
+                        <td>INDIA</td>
+                        <td><img class="logo" src="./../../assets/image/LEBANON flag.png"></td>
+                        <td>LEBANON</td>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/kuwait flag.png"></td>
+                        <td>KUWAIT</td>
+                        <td><img class="logo" src="./../../assets/image/MALDIVES flag.png"></td>
+                        <td>MALDIVES</td>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/NEPAL flag.png"></td>
+                        <td>NEPAL</td>
+                        <td><img class="logo" src="./../../assets/image/BHUTAN flag.png"></td>
+                        <td>BHUTAN</td>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/PAKISTAN flag.webp"></td>
+                       <td>PAKISTAN</td>
+                       <td><img class="logo" src="./../../assets/image/BANGALADESH flag.png"></td>
+                       <td>BANGALADESH</td> 
+                    </tr>
+        
+                    <tr class="table-top">
+                        <th>GROUP C</th>
+                        <th>GROUP D</th>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/Flag_of_New_Zealand.png"></td>
+                        <td>NEW ZEALAND</td>
+                        <td><img class="logo" src="./../../assets/image/Flag-Canada.webp"></td>
+                        <td>CANADA</td>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/AUSTRALIA.png"></td>
+                        <td>AUSTRALIA</td>
+                        <td><img class="logo" src="./../../assets/image/NETHERLANDS.png"></td>
+                        <td>NETHERLANDS</td>
+                    </tr>
+                    <tr>
+                     <td><img class="logo" src="./../../assets/image/USA.jpg"></td>
+                        <td>USA</td>
+                        <td><img class="logo" src="./../../assets/image/BRAZIL.jpg"></td>
+                        <td>BRAZIL</td>
+                    </tr>
+                    <tr>
+                        <td><img class="logo" src="./../../assets/image/SWEDEN.png"></td>
+                       <td>SWEDEN</td>
+                       <td><img class="logo" src="./../../assets/image/JAPAN flag.png"></td>
+                       <td>JAPAN</td> 
+                    </tr>
+                </table>
+        </article>
+        </div>
+    </ng-template>
+        </article> 
 
-                <tr class="table-top">
-                    <th>GROUP C</th>
-                    <th>GROUP D</th>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/Flag_of_New_Zealand.png"></td>
-                    <td>NEW ZEALAND</td>
-                    <td><img class="logo" src="./../../assets/image/Flag-Canada.webp"></td>
-                    <td>CANADA</td>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/AUSTRALIA.png"></td>
-                    <td>AUSTRALIA</td>
-                    <td><img class="logo" src="./../../assets/image/NETHERLANDS.png"></td>
-                    <td>NETHERLANDS</td>
-                </tr>
-                <tr>
-                 <td><img class="logo" src="./../../assets/image/USA.jpg"></td>
-                    <td>USA</td>
-                    <td><img class="logo" src="./../../assets/image/BRAZIL.jpg"></td>
-                    <td>BRAZIL</td>
-                </tr>
-                <tr>
-                    <td><img class="logo" src="./../../assets/image/SWEDEN.png"></td>
-                   <td>SWEDEN</td>
-                   <td><img class="logo" src="./../../assets/image/JAPAN flag.png"></td>
-                   <td>JAPAN</td> 
-                </tr>
-            </table>
-    </article>
+
+
+
+ <!-- <div class="thamu">
+<article>
+    <ng-template #elseBlock>
+
+    <h1>Athelatic Teams</h1>
+    <p>OFFICIAL SCHEDULE</p>
+    <table>
+        <tr class="table-top">
+            <th>GROUP A</th>
+            <th>GROUP B</th>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/indian flag.png"></td>
+            <td>INDIA</td>
+            <td><img class="logo" src="./../../assets/image/LEBANON flag.png"></td>
+            <td>LEBANON</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/kuwait flag.png"></td>
+            <td>KUWAIT</td>
+            <td><img class="logo" src="./../../assets/image/MALDIVES flag.png"></td>
+            <td>MALDIVES</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/NEPAL flag.png"></td>
+            <td>NEPAL</td>
+            <td><img class="logo" src="./../../assets/image/BHUTAN flag.png"></td>
+            <td>BHUTAN</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/PAKISTAN flag.webp"></td>
+           <td>PAKISTAN</td>
+           <td><img class="logo" src="./../../assets/image/BANGALADESH flag.png"></td>
+           <td>BANGALADESH</td> 
+        </tr>
+
+        <tr class="table-top">
+            <th>GROUP C</th>
+            <th>GROUP D</th>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/Flag_of_New_Zealand.png"></td>
+            <td>NEW ZEALAND</td>
+            <td><img class="logo" src="./../../assets/image/Flag-Canada.webp"></td>
+            <td>CANADA</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/AUSTRALIA.png"></td>
+            <td>AUSTRALIA</td>
+            <td><img class="logo" src="./../../assets/image/NETHERLANDS.png"></td>
+            <td>NETHERLANDS</td>
+        </tr>
+        <tr>
+         <td><img class="logo" src="./../../assets/image/USA.jpg"></td>
+            <td>USA</td>
+            <td><img class="logo" src="./../../assets/image/BRAZIL.jpg"></td>
+            <td>BRAZIL</td>
+        </tr>
+        <tr>
+            <td><img class="logo" src="./../../assets/image/SWEDEN.png"></td>
+           <td>SWEDEN</td>
+           <td><img class="logo" src="./../../assets/image/JAPAN flag.png"></td>
+           <td>JAPAN</td> 
+        </tr>
+    </table>
+</ng-template>
+</article> 
+</div>  -->
     <footer>
         <div>@All copyrights received...</div>
     </footer>
