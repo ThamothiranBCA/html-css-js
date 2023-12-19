@@ -1,0 +1,91 @@
+article{
+    height: 700px;
+    width: 100%;
+    background-color: #093264;
+    // line-height:20px ;
+    color: white;
+}
+.image{
+    height: 350px;
+    width: 350px;
+    border-radius: 212px;
+    float: right;
+    margin: 146px 130px 0px 0px;
+}
+h1{
+    padding: 154px 0 0 23%;
+    // line-height: 166px;
+    display: inline-block;
+    color: white;
+    font-size: xxx-large;
+}
+h2{
+    display: inline-block;
+    color: white;
+    margin: 0 0 0 143px;
+}
+.socialicons{
+    display: flex;
+    padding: 0 0 0 200px;
+}
+.socialicons a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 10px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+    background: aqua;
+}
+.socialicons a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.socialicons a .fa-regular{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.socialicons a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg,#ed1c94,#ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+.socialicons a:hover::after{
+    top: 0;
+}
+.socialicons a:hover .fa-brands{
+    color: #fff;
+}
+.socialicons a:hover .fa-regular{
+    color: #fff;
+}
+.socialicons a:hover{
+    transform: translateY(-10px);
+}
+.tech{
+    height: 75px;
+    width: 75px;
+    margin-left: 30px;
+}
+.exlens{
+  display: inline;
+}
+.skills{
+    padding: 80px 0 0 98px;
+}
